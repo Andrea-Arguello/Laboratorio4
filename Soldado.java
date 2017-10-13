@@ -13,7 +13,7 @@ public class Soldado extends Militar
 	*/
 	public int getHoras()
 	{
-		return 80;
+		return super.getHoras()*2;
 	}
 	
 	/**
@@ -21,7 +21,7 @@ public class Soldado extends Militar
 	*/
 	public double getSalario()
 	{
-		return 30000.0;
+		return super.getSalario() - 10000.0;
 	}
 	
 	/**
@@ -29,7 +29,7 @@ public class Soldado extends Militar
 	*/
 	public int getVacaciones()
 	{
-		return 5;
+		return super.getVacaciones()/2;
 	}
 	
 	/** Recibe orden
